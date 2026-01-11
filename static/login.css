@@ -181,7 +181,7 @@ input::placeholder {
 }
 
 .record{
-    font-size: 14vh;
+    font-size: 6.5dvw;
     color: rgba(255, 255, 255, 0.934);
     text-shadow: 0 0 4px rgb(195, 0, 255);
     font-weight: 500;
@@ -194,5 +194,6 @@ input::placeholder {
     text-shadow: 0 0 2px rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.678);
     font-weight: 200;
+    width: 32dvw;
 
 }
