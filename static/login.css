@@ -12,7 +12,7 @@ body{
     color: white;
     font-family: "Outfit", sans-serif;
     background: url("/static/src/record-doodle.png");
-    background-size: 51vw;
+    background-size: 46vw;
     background-repeat: repeat;
     background-color: rgb(0, 0, 0);
     width: 100%;
@@ -25,11 +25,42 @@ body{
 .top-bar{
     position: fixed;
     top: 0;
-    height: 6vh;
+    height: 9vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.849);
-    box-shadow:0 0 6px black ;
     z-index: 100;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+    box-sizing: border-box;
+    padding-right: 2vw;
+}
+
+
+
+.auth-op{
+    display: flex;
+    gap: 1vw;
+}
+
+.op-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0.5vw;
+    font-size: 1.2vw;
+    border-radius: 0.2vw;
+
+}
+
+.reg-op{
+    background-color: rgb(177, 72, 252);
+    color: rgb(0, 0, 0);
+}
+
+.log-op{
+    border: solid 2px rgb(177, 72, 252);
+    color: rgb(177, 72, 252);
 }
 
 .main{
@@ -43,29 +74,36 @@ body{
 
 .sign-col{
     height: 100dvh;
-    width: 65vw;
-    background-color: rgba(97, 0, 176, 0.929);
+    width: 40dvw;
+    background-color: rgb(21, 0, 36);
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    mask-image: linear-gradient(to right, black 85%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    padding: 1vw;
+    justify-content: center;
+    
+    backdrop-filter: blur(1px);
 }
 
 .sign-box{
-    margin-left: 4vw;
-    height: 80%;
-    width: 60%;
+    height: 95%;
+    width: 90%;
     padding: 1vw;
-    background-color: rgba(0, 0, 0, 0.694);
-    border-radius: 10px;
+    
+    border-radius: 5px;
     box-sizing: border-box;
+    color: rgb(255, 255, 255);
     
 }
 
 .titl{
     font-size: 5vw;
-    margin-bottom: 2vw;
+    margin-bottom: 0.7vw;
+}
+
+hr{
+    border: rgb(175, 83, 255) solid 1px;
 }
 
 .form-box{
@@ -99,8 +137,8 @@ body{
 }
 
 .otp-btn{
-    background-color: white;
-    color: black;
+    background-color: rgb(149, 0, 255);
+    color: rgb(255, 255, 255);
     height: 3vh;
     width: 7vw;
     border: transparent;
@@ -115,7 +153,7 @@ body{
     width: 90%;
     background-color: transparent;
     border: transparent;
-    border-bottom: solid white 2px;
+    border-bottom: solid rgb(255, 255, 255) 2px;
     height: 2vh;
     margin-top: 7vh;
     color: white;
@@ -127,10 +165,15 @@ body{
 
 .otp-inp{
     margin-left: 5vh;
-    border: solid white 2px;
+    border: solid rgb(255, 255, 255) 2px;
     padding: 0.5vh;
-    width: 40%;
+    width: 30%;
     margin-top: 2vh;
+    padding: 1vw;
+    display: flex;
+    text-align: center;
+    border-radius: 0.9vh;
+    background-color: rgba(255, 255, 255, 0.073);
 }
 
 input:focus {
@@ -145,20 +188,28 @@ input::placeholder {
 
 .sub-box{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 1vw;
     
 }
 
 .login-btn{
-    margin-top: 2vh;
+    margin-top: 10vh;
     height: 5vh;
-    width: 10vw;
-    background-color: rgb(255, 255, 255);
+    width: 30vw;
+    background-color: rgb(149, 0, 255);
     border: transparent;
     border-radius: 20px;
     font-family: "Outfit", sans-serif;
     font-size: 2.5vh;
+    color: white;
 
+}
+
+a{
+    color: rgba(255, 255, 255, 0.913);
 }
 
 .hov{
@@ -172,28 +223,75 @@ input::placeholder {
 
 
 .side-space{
-    
-    width: 35dvw;
+    height: 100vh;
+    width: 60dvw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     box-sizing: border-box;
+    align-items: center;
+}
+
+.side-layer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.763);
+    backdrop-filter: blur(1px);
+}
+
+.app-logo{
+    height: 6vw;
+    width: 6vw;
+    border: solid white 2px;
+    border-radius: 1vw;
 }
 
 .record{
-    font-size: 6.5dvw;
+    font-size: 5dvw;
     color: rgba(255, 255, 255, 0.934);
-    text-shadow: 0 0 4px rgb(195, 0, 255);
+    text-shadow: 0 0 9px rgb(170, 0, 255);
     font-weight: 500;
 }
 
 .slogan{
-    color: rgb(202, 138, 255);
+    color: rgb(200, 137, 255);
     text-align: center;
-    font-size: 3vh;
+    font-size: 1.2vw;
     text-shadow: 0 0 2px rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.678);
-    font-weight: 200;
-    width: 32dvw;
+    
+    font-weight: 300;
+    width: 27dvw;
 
+}
+
+.bottom-bar{
+    position: fixed;
+    bottom: 0;
+    height: 6vh;
+    width: 60vw;
+    z-index: 100;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+
+.comp-box{
+    width: 30vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: end;
+    padding-right: 1vw;
+}
+
+.comp-logo{
+    font-size: 1.5vw;
+    color: rgba(255, 255, 255, 0.42);
+    font-weight: 500;
 }
