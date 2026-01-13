@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecordBro - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <div class="top-bar">
+        <div class="logo-area">
+                
+            RecordBro!
+        </div>
+        <div class="user-nav">
+            <a class="nav-item">Dashboard</a>
+            <a class="nav-item">My Requests</a>
+            <div class="profile-pic hov"></div>
+        </div>
+    </div>
+
+
+    <div class="main-container">
+
+        <div class="hero-box">
+            <div class="hero-text">
+                <h1>Hello, User!</h1>
+                <p>You have 0 active assignments. Ready to earn some cash or get your work done?</p>
+            </div>
+
+            <button class="create-btn hov">+ Create Request</button>
+        </div>
+
+   
+        <div class="feed-header">
+            <div class="feed-title">Available Requests</div>
+            <div class="filter-opts">
+                <div class="filter-tag active">All</div>
+                <div class="filter-tag">Records</div>
+                <div class="filter-tag">Assignments</div>
+                <div class="filter-tag">High Pay</div>
+            </div>
+        </div>
+
+   
+        <div class="requests-list" id="grid">
+            
+           
+            <div class="req-card">
+                <span class="card-tag">CHEMISTRY</span>
+                <h3 class="card-title">Applied Chemistry Lab Record</h3>
+                <p class="card-desc">Need someone to write 12 experiments. Diagrams included. Must be neat handwriting.</p>
+                <div class="card-meta">
+                    <span class="deadline">Due: 2 Days</span>
+                    <span class="price">₹500</span>
+                </div>
+                <button class="accept-btn">Accept</button>
+            </div>
+
+            <div class="req-card">
+                <span class="card-tag">MATH</span>
+                <h3 class="card-title">MATLAB Record</h3>
+                <p class="card-desc">4 experiments, codes provided in the manual. pls help.</p>
+                <div class="card-meta">
+                    <span class="deadline">Due: Tomorrow</span>
+                    <span class="price">₹350</span>
+                </div>
+                <button class="accept-btn">Accept</button>
+            </div>
+
+          
+            <div class="req-card">
+                <span class="card-tag">EIM</span>
+                <h3 class="card-title">Life Cycle Analysis</h3>
+                <p class="card-desc">Life Cycle Analysis on Lithium ion battery. Create 55 page word doc.</p>
+                <div class="card-meta">
+                    <span class="deadline">Due: 5 Days</span>
+                    <span class="price">₹800</span>
+                </div>
+                <button class="accept-btn">Accept</button>
+            </div>
+            
+        
+            <div class="req-card">
+                <span class="card-tag">BASIC ENGG</span>
+                <h3 class="card-title">Elec. and Mech. Record</h3>
+                <p class="card-desc">Full semester record work - Basic Engineering. Approx 30 pages. Blue ink only.</p>
+                <div class="card-meta">
+                    <span class="deadline">Due: 1 Week</span>
+                    <span class="price">₹1200</span>
+                </div>
+                <button class="accept-btn">Accept</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="fil-layer"></div>
+</body>
+</html>

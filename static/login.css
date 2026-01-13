@@ -54,13 +54,13 @@ body{
 }
 
 .reg-op{
-    background-color: rgb(177, 72, 252);
+    background-color: rgb(159, 25, 255);
     color: rgb(0, 0, 0);
 }
 
 .log-op{
-    border: solid 2px rgb(177, 72, 252);
-    color: rgb(177, 72, 252);
+    border: solid 0.2vw rgb(159, 25, 255);
+    color: rgb(159, 25, 255);
 }
 
 .main{
@@ -75,15 +75,15 @@ body{
 .sign-col{
     height: 100dvh;
     width: 40dvw;
-    background-color: rgb(21, 0, 36);
+    background: linear-gradient(90deg, rgb(21, 0, 36) 0%, rgb(78, 9, 121) 100%);
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    box-shadow: 0 0 30px rgb(0, 0, 0);
+    box-shadow: 0 0 3vw rgb(0, 0, 0);
     padding: 1vw;
     justify-content: center;
     
-    backdrop-filter: blur(1px);
+    
 }
 
 .sign-box{
@@ -91,7 +91,6 @@ body{
     width: 90%;
     padding: 1vw;
     
-    border-radius: 5px;
     box-sizing: border-box;
     color: rgb(255, 255, 255);
     
@@ -103,7 +102,8 @@ body{
 }
 
 hr{
-    border: rgb(175, 83, 255) solid 1px;
+    height: 0;
+    border: rgb(175, 83, 255) solid 0.1vw;
 }
 
 .form-box{
@@ -142,20 +142,21 @@ hr{
     height: 3vh;
     width: 7vw;
     border: transparent;
-    border-radius: 20px;
-    margin-top: 1vh;
+    border-radius: 1vw;
+    margin-top: 0.5vw;
     font-family: "Outfit", sans-serif;
     margin-left: 2.5vw;
-    font-size: 2vh;
+    font-size: 1vw;
+    box-sizing: border-box;
 }
 
 .inp{
     width: 90%;
     background-color: transparent;
     border: transparent;
-    border-bottom: solid rgb(255, 255, 255) 2px;
-    height: 2vh;
-    margin-top: 7vh;
+    border-bottom: solid rgb(255, 255, 255) 0.15vw;
+    height: 1vw;
+    margin-top: 3.2vw;
     color: white;
     font-family: "Outfit", sans-serif;
     font-size: 2vh;
@@ -165,7 +166,7 @@ hr{
 
 .otp-inp{
     margin-left: 5vh;
-    border: solid rgb(255, 255, 255) 2px;
+    border: solid rgb(255, 255, 255) 0.1vw;
     padding: 0.5vh;
     width: 30%;
     margin-top: 2vh;
@@ -201,7 +202,7 @@ input::placeholder {
     width: 30vw;
     background-color: rgb(149, 0, 255);
     border: transparent;
-    border-radius: 20px;
+    border-radius: 2vw;
     font-family: "Outfit", sans-serif;
     font-size: 2.5vh;
     color: white;
@@ -209,6 +210,7 @@ input::placeholder {
 }
 
 a{
+    font-size: 1vw;
     color: rgba(255, 255, 255, 0.913);
 }
 
