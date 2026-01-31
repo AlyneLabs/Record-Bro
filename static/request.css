@@ -1,0 +1,325 @@
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+body {
+    margin: 0;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    background: url("/static/src/record-doodle.png");
+    background-size: 46vw;
+    background-repeat: repeat;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    height: 9vh;
+    width: 100vw;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: 2vw;
+    padding-left: 0.5vw;
+    background-color: rgba(0, 0, 0, 0.8); 
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(177, 72, 252, 0.3);
+}
+
+.logo-area {
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 0 9px rgb(170, 0, 255);
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+.hlogo{
+    height: 1.8vw;
+    width: 1.8vw;
+
+   
+}
+
+.user-nav {
+    display: flex;
+    gap: 1.5vw;
+    align-items: center;
+}
+
+.nav-item {
+    font-size: 1vw;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    color: rgb(177, 72, 252);
+}
+
+.profile-pic {
+    height: 4vh;
+    width: 4vh;
+    border-radius: 50%;
+    background-color: rgb(177, 72, 252);
+    border: 2px solid white;
+}
+
+.side-bar {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 3vw;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 2vw;
+    background-color: rgb(0, 0, 0); 
+    backdrop-filter: blur(5px);
+    border-right: 1px solid rgba(177, 72, 252, 0.3);
+}
+
+.main-container {
+    position: relative;
+    margin-top: 9vh; 
+    width: 97vw;
+    min-height: 91vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 1vw;
+    padding-top: 0vw;
+    box-sizing: border-box;
+    z-index: 1;
+    margin-left: 3vw;
+}
+
+.head-bar{
+    width: 100%;
+    height: 7vh;
+    background: linear-gradient(90deg, rgb(21, 0, 36) 0%, rgb(97, 10, 151) 100%);
+    border-bottom: 1px solid rgba(177, 72, 252, 0.3);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 1vw;
+}
+
+.alogo-area {
+    font-size: 1.5vw;
+    font-weight: 300;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.alogo{
+    height: 2.6vw;
+    width: 2.6vw;
+    background-color: rgb(97, 0, 181);
+    border-radius: 10%;   
+}
+
+.req-main{
+    height: 84vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    padding-top: 0vw;
+    box-sizing: border-box;
+    z-index: 1;
+    
+}
+
+.l-bar{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    padding-left: 3vw;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgba(177, 72, 252, 0.3);
+    
+}
+
+.tag-a{
+    font-size: 1.4vw;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.ta{
+    font-size: 1vw;
+    color: rgb(82, 119, 255);
+}
+
+.main-area{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.assn-area{
+    height: 100%;
+    width: 60%;
+    padding-left: 3vw;
+}
+
+.titl-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+}
+
+.header{
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+.due{
+    font-size: 0.9vw;
+    color: rgba(255, 255, 255, 0.76)
+}
+
+.row-2{
+    margin-top: 7vh;
+}
+
+.inst-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.tag1{
+    font-weight: 500;
+    font-size: 0.9vw;
+}
+
+pr{
+    font-weight: 200;
+    font-size: 1.2vw;
+    text-align: justify;
+}
+
+.ref-box{
+    margin-top: 5vh;
+    gap: 1.8vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.ref-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+
+.ref{
+    width: 100%;
+    height: 6vh;
+    border: 1px solid rgba(177, 72, 252, 0.58);
+    background-color: black;
+}
+
+.row-3{
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.acc{
+    width: 50vw;
+    height: 5vh;
+    background-color: rgb(102, 0, 180);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5vh;
+    font-size: 1.3vw;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    
+
+}
+
+.prof-area{
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    border-left: 1px solid rgba(177, 72, 252, 0.3);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.p-top{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+}
+
+.reqby{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 1.3vw;
+}
+
+.p-box{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pfp{
+    height: 6vw;
+    width: 6vw;
+    background-color: rgb(149, 0, 255);
+    border: solid 5px white;
+    border-radius: 100%;
+}
+
+.p-name{
+    font-size: 3vw;
+    font-weight: 400;
+}
+
+.p-des{
+    font-size: 2vw;
+    font-weight: 200;
+}
+
+.fil-layer{
+    position: fixed;
+    z-index: 0;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.877);
+}

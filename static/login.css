@@ -47,20 +47,21 @@ body{
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    padding: 0.5vw;
-    font-size: 1.2vw;
+    padding: 0.7vw;
+    font-size: 1vw;
     border-radius: 0.2vw;
+    font-weight: 600;
 
 }
 
 .reg-op{
-    background-color: rgb(159, 25, 255);
+    background: linear-gradient(90deg, rgb(149, 0, 255) 0%, rgba(78, 9, 121, 0.977) 100%);
     color: rgb(0, 0, 0);
 }
 
 .log-op{
-    border: solid 0.2vw rgb(159, 25, 255);
-    color: rgb(159, 25, 255);
+    border: solid 0.2vw rgb(149, 0, 255);
+    color: rgb(149, 0, 255);
 }
 
 .main{
@@ -75,19 +76,21 @@ body{
 .sign-col{
     height: 100dvh;
     width: 40dvw;
-    background: linear-gradient(90deg, rgb(21, 0, 36) 0%, rgb(78, 9, 121) 100%);
+    background: linear-gradient(90deg, rgb(21, 0, 36) 0%, rgba(78, 9, 121, 0.977) 100%);
     display: flex;
     align-items: center;
     box-sizing: border-box;
     box-shadow: 0 0 3vw rgb(0, 0, 0);
     padding: 1vw;
     justify-content: center;
+    border-right: 1px solid rgba(177, 72, 252, 0.71);
+    box-shadow: 0 0 2px rgb(255, 255, 255);
     
     
 }
 
 .sign-box{
-    height: 95%;
+    height: 100%;
     width: 90%;
     padding: 1vw;
     
@@ -97,7 +100,7 @@ body{
 }
 
 .titl{
-    font-size: 5vw;
+    font-size: 4vw;
     margin-bottom: 0.7vw;
 }
 
@@ -242,8 +245,8 @@ a{
     justify-content: center;
     box-sizing: border-box;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.763);
-    backdrop-filter: blur(1px);
+    background-color: rgba(0, 0, 0, 0.913);
+    
 }
 
 .app-logo{

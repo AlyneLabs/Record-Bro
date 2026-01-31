@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='request.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo-area">
+            <img src="{{ url_for('static', filename='src/home.png') }}" class="hlogo">    
+            RecordBro!
+        </div>
+        <div class="user-nav">
+            <a class="nav-item">Wallet</a>
+            <a class="nav-item">Settings</a>
+            <div class="profile-pic hov"></div>
+        </div>
+    </div>
+
+    <div class="side-bar"></div>
+
+    <div class="main-container">
+        <div class="head-bar">
+            <div class="alogo-area">
+            <img src="{{ url_for('static', filename='src/Writer_icon.png') }}" class="alogo">    
+            Record request
+        </div>
+        </div>
+        <div class="req-main">
+            <div class="l-bar">
+                <a href="" class="tag-a">
+                    <span><</span>
+                    <span class="ta"> back</span>
+                </a>
+            </div>
+
+            <div class="main-area">
+                <div class="assn-area">
+                    <div class="row-1">
+                        <div class="titl-box">
+                            <div class="header">CHEMISTRY RECORD</div>
+                            <div class="due">Due 20 January 2026 23:59</div>
+                        </div>
+                        <div class="credit-box"></div>
+                    </div>
+                    <div class="row-2">
+                        <div class="inst-box">
+                            <div class="tag1">Instructions</div>
+                            <pr>To complete an assignment successfully, begin by thoroughly analyzing the prompt to understand requirements, keywords, and criteria. Plan your time, conduct focused research to gather relevant information, and create a structured outline before drafting. Write, edit for clarity and flow, cite sources to avoid plagiarism, and proofread for final errors. </pr>
+                        </div>
+                        <div class="ref-box">
+                            <div class="tag1">Reference materials</div>
+                            <div class="ref-list">
+                                <div class="ref"></div>
+                                <div class="ref"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-3">
+                        <div class="action-area">
+                            <div class="acc">Accept Work</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prof-area">
+                    <div class="p-top">
+                        <div class="reqby">Request By:</div>
+                    </div>
+                    <div class="p-box">
+                        <div class="pfp"></div>
+                        <div class="p-name">Genkhis Khan</div>
+                        <div class="p-des">Btech - Mechatronics</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="fil-layer"></div>
+</body>
+</html>
