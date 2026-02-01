@@ -168,11 +168,24 @@ body {
     text-decoration: none;
     cursor: pointer;
     color: white;
+    display: flex;
+    align-items: center;
+}
+
+.back-btn{
+    filter: invert();
+    height: 2vh;
+    width: 2vh;
 }
 
 .ta{
     font-size: 1vw;
-    color: rgb(82, 119, 255);
+    color: rgb(96, 167, 255);
+    height: 2vh;
+    
+    display: flex;
+    align-items: center;
+    margin-bottom: -0.3vh;
 }
 
 .main-area{
@@ -187,21 +200,51 @@ body {
     padding-left: 3vw;
 }
 
+.row-1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4vh;
+}
+
 .titl-box{
     display: flex;
     flex-direction: column;
-    margin-top: 1vh;
+
 }
 
 .header{
     font-size: 3vw;
     font-weight: 500;
+    text-shadow: 0 0 3px rgb(255, 255, 255);
 }
 
 .due{
     font-size: 0.9vw;
     color: rgba(255, 255, 255, 0.76)
 }
+
+.credit-box{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+.pay-txt{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 1vw;
+}
+
+.pay{
+    color: rgb(0, 249, 4);
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+
 
 .row-2{
     margin-top: 7vh;
@@ -245,7 +288,7 @@ pr{
 }
 
 .row-3{
-    margin-top: 15vh;
+    margin-top: 11vh;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -270,8 +313,9 @@ pr{
 .prof-area{
     width: 30%;
     height: 100%;
-    background-color: black;
-    border-left: 1px solid rgba(177, 72, 252, 0.3);
+    background-color: rgb(6, 6, 6);
+    backdrop-filter: blur(1px);
+    border-left: 1px solid rgba(147, 0, 252, 0.3);
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -283,12 +327,13 @@ pr{
     display: flex;
     align-items: center;
     padding-left: 1vw;
+    
 }
 
 .reqby{
     color: rgb(255, 255, 255);
     font-weight: 400;
-    font-size: 1.3vw;
+    font-size: 0.9vw;
 }
 
 .p-box{
@@ -308,12 +353,12 @@ pr{
 }
 
 .p-name{
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-weight: 400;
 }
 
 .p-des{
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: 200;
 }
 
